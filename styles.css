@@ -3,11 +3,13 @@ body {
     background-color: #f3f3f3;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
+    overflow-y: auto;
 }
 
 .feed {
-    width: 300px;
+    width: 350px;
     margin-top: 20px;
 }
 
@@ -34,3 +36,49 @@ body {
     font-size: 14px;
     color: #666;
 }
+
+
+.post-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.post-icons span {
+    user-select: none; 
+}
+
+.like-btn:hover,
+.comment-btn:hover {
+    color: red;
+}
+
+
+.comment-section {
+    display: flex;
+    margin-top: 5px;
+}
+
+.comment-section input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-section button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.comment-section button:hover {
+    background-color: #0056b3;
+}
+
